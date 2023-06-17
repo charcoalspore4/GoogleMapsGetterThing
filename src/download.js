@@ -1,4 +1,4 @@
-import data from "./2022_JULY.json";
+import data from "./2022_AUGUST.json";
 function headers({ csv }) {
   return (csv += "Name,Address,Latitude,Longitude,StartTimeStamp,EndTimeStamp");
 }
@@ -42,5 +42,5 @@ export function download() {
   let csv = "";
   csv = headers({ csv });
   csv = body({ csv });
-  generate({ csv, name: "2022_JULY" });
+  generate({ csv, name: "2022_AUGUST" });
 }
